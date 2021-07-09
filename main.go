@@ -35,7 +35,7 @@ func main() {
 			return err
 		}
 
-		pusherClient.Trigger("channel", "message", data)
+		pusherClient.Trigger("chat", "message", data)
 
 		return c.JSON([]string{})
 	})
